@@ -5,11 +5,11 @@
 	culture = volhynian
 	religion = slavic_pagan
 	holding = tribal_holding
+	890.6.5 = {
+		culture = russian
+	}
 	935.1.1 = {
 		holding = castle_holding
-	}
-	964.1.1 = {
-		culture = russian
 	}
 	1000.1.1 = {
 		religion = orthodox
@@ -61,11 +61,11 @@
 	culture = volhynian
 	religion = slavic_pagan
 	holding = tribal_holding
+	890.6.5 = {
+		culture = russian
+	}
 	935.1.1 = {
 		holding = castle_holding
-	}
-	964.1.1 = {
-		culture = russian
 	}
 	1000.1.1 = {
 		religion = orthodox
@@ -81,11 +81,11 @@
 	religion = slavic_pagan
 	holding = tribal_holding
 	special_building_slot = hotin_fort_01
+	890.6.5 = {
+		culture = russian
+	}
 	935.1.1 = {
 		holding = castle_holding
-	}
-	964.1.1 = {
-		culture = russian
 	}
 	1000.1.1 = {
 		religion = orthodox
@@ -105,11 +105,11 @@
 	culture = volhynian
 	religion = slavic_pagan
 	holding = tribal_holding
+	890.6.5 = {
+		culture = russian
+	}
 	935.1.1 = {
 		holding = castle_holding
-	}
-	964.1.1 = {
-		culture = russian
 	}
 	1000.1.1 = {
 		religion = orthodox
@@ -127,11 +127,11 @@
 	culture = volhynian
 	religion = slavic_pagan
 	holding = tribal_holding
+	890.6.5 = {
+		culture = russian
+	}
 	935.1.1 = {
 		holding = castle_holding
-	}
-	964.1.1 = {
-		culture = russian
 	}
 	1000.1.1 = {
 		religion = orthodox
@@ -146,11 +146,11 @@
 	culture = volhynian
 	religion = slavic_pagan
 	holding = tribal_holding
+	890.6.5 = {
+		culture = russian
+	}
 	935.1.1 = {
 		holding = castle_holding
-	}
-	964.1.1 = {
-		culture = russian
 	}
 	1000.1.1 = {
 		religion = orthodox
@@ -283,11 +283,11 @@
 	culture = volhynian
 	religion = slavic_pagan
 	holding = tribal_holding
+	890.6.5 = {
+		culture = russian
+	}
 	935.1.1 = {
 		holding = castle_holding
-	}
-	964.1.1 = {
-		culture = russian
 	}
 	1000.1.1 = {
 		religion = orthodox

@@ -11,11 +11,11 @@
 			palisades_01
 		}
 	}
+	890.6.5 = {
+		culture = russian
+	}
 	935.1.1 = {
 		holding = castle_holding
-	}
-	964.1.1 = {
-		culture = russian
 	}
 	989.9.15 = {
 		religion = orthodox
@@ -65,11 +65,11 @@
 	culture = volhynian
 	religion = slavic_pagan
 	holding = tribal_holding
+	890.6.5 = {
+		culture = russian
+	}
 	935.1.1 = {
 		holding = castle_holding
-	}
-	964.1.1 = {
-		culture = russian
 	}
 	989.9.15 = {
 		religion = orthodox
@@ -90,11 +90,11 @@
 	culture = volhynian
 	religion = slavic_pagan
 	holding = tribal_holding
+	890.6.5 = {
+		culture = russian
+	}
 	935.1.1 = {
 		holding = castle_holding
-	}
-	964.1.1 = {
-		culture = russian
 	}
 	989.9.15 = {
 		religion = orthodox
@@ -121,11 +121,11 @@
 	culture = volhynian
 	religion = slavic_pagan
 	holding = tribal_holding
+	890.6.5 = {
+		culture = russian
+	}
 	935.1.1 = {
 		holding = castle_holding
-	}
-	964.1.1 = {
-		culture = russian
 	}
 	989.9.15 = {
 		religion = orthodox
@@ -143,11 +143,11 @@
 	culture = volhynian
 	religion = slavic_pagan
 	holding = tribal_holding
+	890.6.5 = {
+		culture = russian
+	}
 	935.1.1 = {
 		holding = castle_holding
-	}
-	964.1.1 = {
-		culture = russian
 	}
 	989.9.15 = {
 		religion = orthodox
@@ -165,11 +165,11 @@
 	culture = volhynian
 	religion = slavic_pagan
 	holding = tribal_holding #Ahistorical? added to give the county a castle
+	890.6.5 = {
+		culture = russian
+	}
 	935.1.1 = {
 		holding = castle_holding
-	}
-	964.1.1 = {
-		culture = russian
 	}
 	989.9.15 = {
 		religion = orthodox
@@ -191,11 +191,11 @@
 	culture = volhynian
 	religion = slavic_pagan
 	holding = tribal_holding
+	890.6.5 = {
+		culture = russian
+	}
 	935.1.1 = {
 		holding = castle_holding
-	}
-	964.1.1 = {
-		culture = russian
 	}
 	989.9.15 = {
 		religion = orthodox
@@ -220,11 +220,11 @@
 	culture = volhynian
 	religion = slavic_pagan
 	holding = tribal_holding
+	890.6.5 = {
+		culture = russian
+	}
 	935.1.1 = {
 		holding = castle_holding
-	}
-	964.1.1 = {
-		culture = russian
 	}
 	989.9.15 = {
 		religion = orthodox
@@ -254,11 +254,11 @@
 	culture = volhynian
 	religion = slavic_pagan
 	holding = tribal_holding
+	890.6.5 = {
+		culture = russian
+	}
 	935.1.1 = {
 		holding = castle_holding
-	}
-	964.1.1 = {
-		culture = russian
 	}
 	989.9.15 = {
 		religion = orthodox
@@ -277,11 +277,11 @@
 	culture = severian
 	religion = slavic_pagan
 	holding = tribal_holding
+	890.6.5 = {
+		culture = russian
+	}
 	935.1.1 = {
 		holding = castle_holding
-	}
-	964.1.1 = {
-		culture = russian
 	}
 	989.9.15 = {
 		religion = orthodox
@@ -315,11 +315,11 @@
 	culture = severian
 	religion = slavic_pagan
 	holding = tribal_holding
+	890.6.5 = {
+		culture = russian
+	}
 	935.1.1 = {
 		holding = castle_holding
-	}
-	964.1.1 = {
-		culture = russian
 	}
 	989.9.15 = {
 		religion = orthodox
@@ -349,11 +349,11 @@
 	culture = severian
 	religion = slavic_pagan
 	holding = tribal_holding
+	890.6.5 = {
+		culture = russian
+	}
 	935.1.1 = {
 		holding = castle_holding
-	}
-	964.1.1 = {
-		culture = russian
 	}
 	989.9.15 = {
 		religion = orthodox
@@ -374,11 +374,11 @@
 	culture = severian
 	religion = slavic_pagan
 	holding = tribal_holding
+	890.6.5 = {
+		culture = russian
+	}
 	935.1.1 = {
 		holding = castle_holding
-	}
-	964.1.1 = {
-		culture = russian
 	}
 	989.9.15 = {
 		religion = orthodox
@@ -398,11 +398,11 @@
 	culture = severian
 	religion = slavic_pagan
 	holding = tribal_holding
+	890.6.5 = {
+		culture = russian
+	}
 	988.1.2 = {
 		holding = castle_holding
-	}
-	964.1.1 = {
-		culture = russian
 	}
 	989.9.15 = {
 		religion = orthodox
@@ -442,11 +442,11 @@
 	culture = severian
 	religion = slavic_pagan
 	holding = tribal_holding
+	890.6.5 = {
+		culture = russian
+	}
 	988.1.2 = {
 		holding = castle_holding
-	}
-	964.1.1 = {
-		culture = russian
 	}
 	989.9.15 = {
 		religion = orthodox
@@ -473,11 +473,11 @@
 	culture = severian
 	religion = slavic_pagan
 	holding = tribal_holding
+	890.6.5 = {
+		culture = russian
+	}
 	988.1.2 = {
 		holding = castle_holding
-	}
-	964.1.1 = {
-		culture = russian
 	}
 	989.9.15 = {
 		religion = orthodox
@@ -501,11 +501,11 @@
 	culture = severian
 	religion = slavic_pagan
 	holding = tribal_holding
+	890.6.5 = {
+		culture = russian
+	}
 	935.1.2 = {
 		holding = castle_holding
-	}
-	964.1.1 = {
-		culture = russian
 	}
 	989.9.15 = {
 		religion = orthodox
@@ -526,11 +526,11 @@
 	culture = severian
 	religion = slavic_pagan
 	holding = tribal_holding
+	890.6.5 = {
+		culture = russian
+	}
 	988.1.2 = {
 		holding = castle_holding
-	}
-	964.1.1 = {
-		culture = russian
 	}
 	989.9.15 = {
 		religion = orthodox
@@ -555,7 +555,7 @@
 	culture = severian
 	religion = slavic_pagan
 	holding = tribal_holding
-	964.1.1 = {
+	890.6.5 = {
 		culture = russian
 	}
 	989.9.15 = {
@@ -580,7 +580,7 @@
 	culture = severian
 	religion = slavic_pagan
 	holding = tribal_holding
-	964.1.1 = {
+	890.6.5 = {
 		culture = russian
 	}
 }
@@ -602,7 +602,7 @@
 	culture = severian
 	religion = slavic_pagan
 	holding = tribal_holding
-	964.1.1 = {
+	890.6.5 = {
 		culture = russian
 	}
 }
