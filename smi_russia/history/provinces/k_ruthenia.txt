@@ -117,8 +117,8 @@
 }
 
 ###c_chornobyl
-5095 = {	#volhynian
-	culture = severian
+5095 = {	#Chornobyl
+	culture = volhynian
 	religion = slavic_pagan
 	holding = tribal_holding
 	935.1.1 = {
