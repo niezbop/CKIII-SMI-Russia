@@ -580,6 +580,9 @@
 	culture = severian
 	religion = slavic_pagan
 	holding = tribal_holding
+	964.1.1 = {
+		culture = russian
+	}
 }
 5213 = {	#Vorotynsk
 	holding = none
@@ -599,6 +602,9 @@
 	culture = severian
 	religion = slavic_pagan
 	holding = tribal_holding
+	964.1.1 = {
+		culture = russian
+	}
 }
 5207 = {	#Ust-livny
 	holding = none
@@ -614,7 +620,7 @@
 	religion = finnish_pagan
 	holding = tribal_holding
 	1050.1.1 = {
-		culture = severian
+		culture = russian
 	}
 }
 5216 = {	#Mtensk
@@ -630,7 +636,7 @@
 	religion = finnish_pagan
 	holding = tribal_holding
 	1050.1.1 = {
-		culture = severian
+		culture = russian
 	}
 }
 5218 = {	#Suvorov
