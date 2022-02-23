@@ -1,0 +1,311 @@
+﻿# Override the 10_culture_conversion_decisions from the base game
+# Simply comment out the last exception WRT to eastern europe
+assimilate_local_traditions_decision = {
+	picture = "gfx/interface/illustrations/decisions/fp1_decision_raise_runestone.dds"
+	
+	sort_order = 75
+
+	desc = assimilate_local_traditions_decision_desc
+	selection_tooltip = assimilate_local_traditions_decision_tooltip
+
+	is_shown = {
+		culture = culture:norse
+		is_landed = yes
+		primary_title.tier > tier_barony
+		NOT = { culture = capital_province.culture }
+		NAND = {
+			is_ai = yes
+			OR = {
+				has_character_flag = converted_culture_this_lifetime
+				has_character_flag = converted_culture_this_lifetime_ai
+			}
+		}
+	}
+
+	is_valid_showing_failures_only = {
+		is_independent_ruler = yes
+		is_physically_able_adult = yes
+		is_at_war = no
+		custom_description = {
+			text = can_only_change_culture_once
+			NOT = { has_character_flag = converted_culture_this_lifetime }
+		}
+		capital_province = {
+			NOT = {
+				geographical_region = world_europe_north
+			}
+		}
+	}
+
+	cost = {
+		prestige = {
+			value = 300
+			if = {
+				limit = {
+					is_ai = yes
+					capital_province = {
+						geographical_region = world_europe_east
+					}
+				}
+				multiply = 0
+			}
+		}
+	}
+
+	effect = {
+		norse_assimilate_local_traditions_effect = {
+			CONVERTER = root
+			OLD_CULTURE = root.culture
+			OLD_FAITH = root.faith
+			NEW_CULTURE = capital_province.culture
+			NEW_FAITH = capital_province.faith
+		}
+	}
+	
+	ai_check_interval = 60
+
+	ai_potential = {
+		culture = culture:norse
+		is_landed = yes
+		NOT = { culture = capital_province.culture }
+	}
+
+	ai_will_do = {
+		base = 100
+		
+		# Don't do it too early
+		modifier = {
+			factor = 0
+			NOT = {
+				primary_title.title_held_years > 30
+			}
+		}
+		
+		# Don't do it if you're zealous
+		modifier = {
+			factor = 0
+			has_trait = zealous
+			NOT = {
+				capital_province.faith = root.faith
+			}
+		}
+		
+		# The following is commented and different from the base game
+		# This exception was probably setup to make sure that Rurik converts to russian
+		# But that's a sad patch, and what this mod does should be more interesting
+		# # Historical Exceptions
+		# modifier = {
+		# 	add = 100
+		#	capital_province = {
+		#		geographical_region = world_europe_east
+		#	}
+		# }
+	}
+}
+
+establish_russian_culture_decision = {
+	picture = "gfx/interface/illustrations/decisions/decision_realm.dds"
+	major = yes
+
+	ai_check_interval = 120
+
+	desc = establish_russian_culture_decision_desc
+	selection_tooltip = establish_russian_culture_decision_tooltip
+
+	is_shown = {
+		culture = culture:norse
+		any_sub_realm_county = {
+			target_is_de_jure_liege_or_above = title:e_russia
+			culture = { has_cultural_pillar = heritage_east_slavic }
+		}
+		NOT = {	
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:flag_established_russian_culture_decision
+			}
+		}
+	}
+
+	is_valid = {
+		culture = culture:norse
+		NOT = { culture = capital_province.culture }
+		culture = {
+			cultural_acceptance = { target = root.capital_province.culture value >= 20 }
+		}
+	}
+
+	is_valid_showing_failures_only = {
+		is_at_war = no
+		is_imprisoned = no
+	}
+
+	effect = {
+		hidden_effect = {
+			# Generate a list of counties we want to flip to the new culture.
+			every_sub_realm_title = {
+				limit = {
+					tier = tier_county
+				}
+				if = {
+					limit = {
+						title_province = { geographical_region = ghw_region_russia }
+						OR = {
+							culture = { has_cultural_pillar = heritage_north_germanic }
+							culture = { has_cultural_pillar = heritage_east_slavic }
+						}
+					}
+					add_to_list = russian_counties
+				}
+			}
+			# Generate a list of neighbouring rulers that may convert as well
+			every_independent_ruler = {
+				limit = {
+					NOT = { this = root }
+					OR = {
+						culture = { has_cultural_pillar = heritage_east_slavic }
+						culture = { has_cultural_pillar = heritage_north_germanic }
+					}
+					capital_county = { geographical_region = ghw_region_russia }
+					opinion = {
+						target = root
+						value >= high_positive_opinion # 60
+					}
+					in_diplomatic_range = root
+				}
+
+				add_to_list = convertible_neighbours
+			}
+
+			# Set the scopes for later
+			save_scope_as = russian_founder
+			culture = { save_scope_as old_culture_1 }
+			capital_province.culture = { save_scope_as old_culture_2 }
+
+			# Create the culture
+			culture:russian = {
+				reset_culture_creation_date = yes
+				get_all_innovations_from = scope:old_culture_1
+				get_all_innovations_from = scope:old_culture_2
+				save_scope_as = new_culture
+			}
+
+			# Perform the culture flip.
+			every_in_list = {
+				list = russian_counties
+
+				merge_cultures_in_player_realm_effect = {
+					OLD_CULTURE_1 = culture
+					OLD_CULTURE_2 = capital_province.culture
+					NEW_CULTURE = culture:russian
+				}
+			}
+
+			# Send all players in the game a notification event about the flip.
+			every_player = {
+				if = {
+					limit = {
+						NOT = { this = root }
+						OR = {
+							culture = { has_cultural_pillar = heritage_north_germanic }
+							culture = { has_cultural_pillar = heritage_east_slavic }
+						}
+						exists = capital_province
+						capital_province = { geographical_region = ghw_region_russia }
+					}
+					trigger_event = smi_russia.3002
+				}
+				else_if = {
+					limit = { this = root }
+					trigger_event = smi_russia.3003
+				}
+				else_if = {
+					limit = {
+						exists = capital_province
+						capital_province = { geographical_region = world_europe }
+					}
+					trigger_event = smi_russia.3005
+				}
+			}
+		}
+
+		# Player changes culture
+		set_culture = culture:russian
+		add_character_flag = converted_culture_this_lifetime
+		hidden_effect = {
+			every_in_list = {
+				list = russian_counties
+				limit = {
+					holder.capital_county = { is_in_list = russian_counties }
+				}
+				holder = {
+					add_to_list = mass_melting_pot_list
+					every_courtier = { add_to_list = mass_melting_pot_list }
+					every_courtier_away = { add_to_list = mass_melting_pot_list }
+				}
+				every_in_list = {
+					list = mass_melting_pot_list
+					limit = {
+						OR = {
+							culture = { has_cultural_pillar = heritage_east_slavic }
+							culture = { has_cultural_pillar = heritage_north_germanic }
+						}
+					}
+					set_culture = culture:russian
+				}
+			}
+		}
+
+		# Closeby scandinavian and east slavic rulers in Russia that likes the founder convert as well
+		hidden_effect = {
+			every_in_list = {
+				list = convertible_neighbours
+				
+				convert_family_culture_and_notify_vassals_effect = {
+					CONVERTER = this
+					OLD_CULTURE = this.culture
+					NEW_CULTURE = culture:russian
+				}
+			}
+		}
+
+		# Summary of above hidden effects to inform players of the decision's impact.
+		show_as_tooltip = {
+			custom_tooltip = establish_russian_culture_decision_effect.tt
+			culture:russian = {
+				get_all_innovations_from = scope:old_culture_1
+				get_all_innovations_from = scope:old_culture_2
+			}
+		}
+
+		add_to_global_variable_list = {
+			name = unavailable_unique_decisions
+			target = flag:flag_established_russian_culture_decision
+		}
+	}
+
+	cost = {
+	}
+
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 0
+
+		# Biggest incentive is the proportion of east slavic counties in your realm
+		modifier = {
+			add = 60
+			any_sub_realm_county = {
+				percent >= 0.5
+				culture = { has_cultural_pillar = heritage_east_slavic }
+			}
+		}
+
+		# Rurikid dynasty (commonly associated with the birth of the Rus') is incentivised to do it as well
+		modifier = {
+			add = 10
+			dynasty = 705
+		}
+	}
+}

@@ -1,0 +1,18 @@
+﻿l_english:
+ smi_russia.3002.t:0 "Rise of the Russians"
+ smi_russia.3002.desc:1 "The forests of the slavs have sheltered us and our families while we take our boats down to the land of Byzance to trade and raid. But those woods and their inhabitants have changed who we are. By acknowledging so, our people will grow strong and proud in this new place we can call home."
+ smi_russia.3002.a:0 "To new friends and new beginnings!"
+
+ smi_russia.3003.t:0 "$smi_russia.3002.t$"
+ smi_russia.3003.desc:0 "We are far from the lands that our Norse ancestors called home, but it is these lands of the slavs that we think of as our country. As the leader of my people, it is my responsibility to ensure future prosperity and if we are to flourish, then we must adapt to our new environment. We must learn from the people whose ancestors made use of these grounds.\n\nBy this decree, we will change our way of life to benefit our kin. We will forge a new path as our own people."
+ smi_russia.3003.a:0 "From this day forward, we call ourselves Russians!"
+
+ smi_russia.3005.t:0 "$smi_russia.3002.t$"
+ smi_russia.3005.desc:0 "A group of Norse settlers hailing from Scandinavia have settled in the woods of the slavs in the east, making a new home for themselves there.\n\nTheir leader, [russian_founder.GetTitledFirstName], has decreed that [russian_founder.GetHerHis] people shall adopt several local customs and traditions to ensuring they will thrive in this new land."
+ smi_russia.3005.a:0 "What does this mean for the region?"
+
+ establish_russian_culture_decision:0 "Establish Russian Culture"
+ establish_russian_culture_decision_desc:0 "We have lived here for a while now. The slavs that occupy the land have been allies, ennemies and trade partners but most of all they have influenced who we are. In their tongues, we are the Rus', the rowers, let us acknowledge that now."
+ establish_russian_culture_decision_confirm:0 "Long live the Russians!"
+ establish_russian_culture_decision_tooltip:0 "Merge our Norse and the local Slav cultures together"
+ establish_russian_culture_decision_effect.tt:0 "All [old_culture_1.GetName] and [old_culture_2.GetName] counties and characters you hold in Russia become [new_culture.GetName]"

@@ -1,0 +1,70 @@
+﻿namespace = smi_russia
+
+#########################################################################
+# Converting Norse/East Slavic into Russian								#
+# Based on Norman merge from base game									#
+# by Sean Hughes & Bianca Savazzi										#
+# smi_russia.3001-3009													#
+#########################################################################
+
+smi_russia.3002 = {
+	type = character_event
+	title = smi_russia.3002.t
+	desc = smi_russia.3002.desc
+	theme = culture_change
+	left_portrait = scope:russian_founder
+
+	immediate = {
+		show_as_tooltip = {
+			custom_tooltip = smi_russia.custom.merge_culture
+			culture:russian = {
+				get_all_innovations_from = culture:norse
+			}
+		}
+	}
+
+	option = {
+		name = smi_russia.3002.a
+	}
+}
+
+smi_russia.3003 = {
+	type = character_event
+	title = smi_russia.3003.t
+	desc = smi_russia.3003.desc
+	theme = culture_change
+	left_portrait = scope:russian_founder
+
+	immediate = {
+		show_as_tooltip = {
+			custom_tooltip = smi_russia.custom.merge_culture
+			culture:russian = {
+				get_all_innovations_from = culture:norse
+			}
+		}
+	}
+
+	option = {
+		name = smi_russia.3003.a
+	}
+}
+
+smi_russia.3005 = {
+	type = character_event
+	title = smi_russia.3005.t
+	desc = smi_russia.3005.desc
+	theme = culture_change
+	left_portrait = scope:russian_founder
+
+	immediate = {
+		show_as_tooltip = {
+			culture:russian = {
+				get_all_innovations_from = culture:norse
+			}
+		}
+	}
+
+	option = {
+		name = smi_russia.3005.a
+	}
+}

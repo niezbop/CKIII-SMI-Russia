@@ -13,6 +13,13 @@
 	}
 	890.6.5 = {
 		culture = russian
+
+		effect = {
+			add_to_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:flag_established_russian_culture_decision
+			}
+		}
 	}
 	935.1.1 = {
 		holding = castle_holding
