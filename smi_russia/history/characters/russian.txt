@@ -121,7 +121,7 @@
 6826 = {
 	name = "Gostomysl"
 	religion = "slavic_pagan"
-	culture = "ilmenian"
+	culture = "severian"
 	dynasty = 1029137
 	father = 160139
 	trait = content
@@ -11205,7 +11205,7 @@
 160099 = {
 	name = "Zvonimir"
 	religion = "slavic_pagan"
-	culture = "ilmenian"
+	culture = "severian"
 	dynasty = 1029137
 	father = 6826
 	860.1.1 = {
@@ -11218,7 +11218,7 @@
 160100 = {
 	name = "Velimir"
 	religion = "slavic_pagan"
-	culture = "ilmenian"
+	culture = "severian"
 	dynasty = 1029137
 	father = 6826
 	861.1.1 = {
@@ -11428,7 +11428,7 @@
 160139 = {
 	name = "Velimir"
 	religion = "slavic_pagan"
-	culture = ilmenian
+	culture = severian
 	dynasty = 1029137
 	father = 194141
 	810.1.1 = {
