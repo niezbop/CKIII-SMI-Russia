@@ -12922,7 +12922,7 @@
 	name = "Iliya"
 	dynasty = 1029118
 	religion = slavic_pagan
-	culture = ilmenian
+	culture = severian
 	father = 194145
 	770.1.1 = {
 		birth = yes
@@ -12999,7 +12999,7 @@
 302242 = {
 	name = "Dobromir"
 	religion = "slavic_pagan"
-	culture = ilmenian
+	culture = severian
 	dynasty = 1029118
 	father = 194146
 	820.1.1 = {
@@ -13012,7 +13012,7 @@
 302243 = {
 	name = "Volodar"
 	religion = "slavic_pagan"
-	culture = ilmenian
+	culture = severian
 	dynasty = 1029118
 	father = 302242
 	845.1.1 = {
@@ -13025,7 +13025,7 @@
 302244 = {
 	name = "Iliya"
 	religion = "slavic_pagan"
-	culture = ilmenian
+	culture = severian
 	dynasty = 1029118
 	father = 302242
 	847.1.1 = {
