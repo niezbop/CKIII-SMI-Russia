@@ -166,6 +166,7 @@ establish_russian_culture_decision = {
 				}
 				if = {
 					limit = {
+						is_ai = yes # The player will have its own choice
 						NOT = { this = root }
 						OR = {
 							culture = { has_cultural_pillar = heritage_east_slavic }
