@@ -1,0 +1,55 @@
+﻿convert_county_from_cultural_heritage_and_holder_if_in_region_effect = {
+	if = {
+		# If this county culture has the old cultural heritage and is in the designated region, flip it to the new culture.
+		limit = {
+            culture = { has_cultural_pillar = $OLD_CULTURAL_HERITAGE$ }
+			title_province = {
+				geographical_region = $REGION$
+			}
+		}
+		set_county_culture = $NEW_CULTURE$
+
+		# If the holder is also of the old culture group, and their capital is in the designated region, we flip them along with the county.
+		holder = {
+			if = {
+				limit = {
+                    culture = { has_cultural_pillar = $OLD_CULTURAL_HERITAGE$ }
+					capital_province = {
+						geographical_region = $REGION$
+					}
+				}
+				set_culture = $NEW_CULTURE$
+			}
+		}
+	}
+}
+
+merge_culture_with_cultural_heritage_in_region_effect = {
+	hidden_effect = {
+		convert_county_from_cultural_heritage_and_holder_if_in_region_effect = {
+			OLD_CULTURAL_HERITAGE = $OLD_CULTURAL_HERITAGE$
+			NEW_CULTURE = $NEW_CULTURE$
+			REGION = $REGION$
+		}
+		convert_county_and_holder_if_in_region_effect = {
+			OLD_CULTURE = $OLD_CULTURE$
+			NEW_CULTURE = $NEW_CULTURE$
+			REGION = $REGION$
+		}
+	}
+}
+
+merge_cultural_heritages_in_region_effect = {
+	hidden_effect = {
+		convert_county_from_cultural_heritage_and_holder_if_in_region_effect = {
+			OLD_CULTURAL_HERITAGE = $OLD_CULTURAL_HERITAGE_1$
+			NEW_CULTURE = $NEW_CULTURE$
+			REGION = $REGION$
+		}
+		convert_county_from_cultural_heritage_and_holder_if_in_region_effect = {
+			OLD_CULTURAL_HERITAGE = $OLD_CULTURAL_HERITAGE_2$
+			NEW_CULTURE = $NEW_CULTURE$
+			REGION = $REGION$
+		}
+	}
+}

@@ -154,26 +154,32 @@ establish_russian_culture_decision = {
 							culture = { has_cultural_pillar = heritage_east_slavic }
 						}
 					}
+
 					add_to_list = russian_counties
 				}
 			}
+
 			# Generate a list of neighbouring rulers that may convert as well
 			every_independent_ruler = {
 				limit = {
-					NOT = { this = root }
-					OR = {
-						culture = { has_cultural_pillar = heritage_east_slavic }
-						culture = { has_cultural_pillar = heritage_north_germanic }
-					}
-					capital_county = { geographical_region = ghw_region_russia }
-					opinion = {
-						target = root
-						value >= high_positive_opinion # 60
-					}
-					in_diplomatic_range = root
+					capital_province = { geographical_region = ghw_region_russia }
 				}
+				if = {
+					limit = {
+						NOT = { this = root }
+						OR = {
+							culture = { has_cultural_pillar = heritage_east_slavic }
+							culture = { has_cultural_pillar = heritage_north_germanic }
+						}
+						opinion = {
+							target = root
+							value >= high_positive_opinion # 60
+						}
+						in_diplomatic_range = root
+					}
 
-				add_to_list = convertible_neighbours
+					add_to_list = convertible_neighbours
+				}
 			}
 
 			# Set the scopes for later
@@ -192,11 +198,11 @@ establish_russian_culture_decision = {
 			# Perform the culture flip.
 			every_in_list = {
 				list = russian_counties
-
-				merge_cultures_in_player_realm_effect = {
-					OLD_CULTURE_1 = culture
-					OLD_CULTURE_2 = capital_province.culture
+				merge_culture_with_cultural_heritage_in_region_effect = {
+					OLD_CULTURAL_HERITAGE = heritage_east_slavic
+					OLD_CULTURE = culture:norse
 					NEW_CULTURE = culture:russian
+					REGION = ghw_region_russia
 				}
 			}
 
