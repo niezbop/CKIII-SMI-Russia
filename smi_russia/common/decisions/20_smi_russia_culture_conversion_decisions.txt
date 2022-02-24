@@ -107,7 +107,7 @@ establish_russian_culture_decision = {
 	picture = "gfx/interface/illustrations/decisions/decision_realm.dds"
 	major = yes
 
-	ai_check_interval = 120
+	ai_check_interval = 48
 
 	desc = establish_russian_culture_decision_desc
 	selection_tooltip = establish_russian_culture_decision_tooltip
@@ -132,6 +132,14 @@ establish_russian_culture_decision = {
 		culture = {
 			cultural_acceptance = { target = root.capital_province.culture value >= 20 }
 		}
+		is_independent_ruler = yes
+		#custom_tooltip = {
+		#	text = MY_PRESTIGE_LEVEL_IS_AT_LEAST
+		#	OR = {
+		#		is_ai = yes
+		#		prestige_level >= 3 # High Prestige level to make it a bit more challenging
+		#	}
+		#}
 	}
 
 	is_valid_showing_failures_only = {
@@ -167,6 +175,8 @@ establish_russian_culture_decision = {
 				if = {
 					limit = {
 						is_ai = yes # The player will have its own choice
+						is_independent_ruler = yes
+						is_landed = yes
 						NOT = { this = root }
 						OR = {
 							culture = { has_cultural_pillar = heritage_east_slavic }
@@ -185,8 +195,8 @@ establish_russian_culture_decision = {
 
 			# Set the scopes for later
 			save_scope_as = russian_founder
-			culture = { save_scope_as old_culture_1 }
-			capital_province.culture = { save_scope_as old_culture_2 }
+			culture = { save_scope_as = old_culture_1 }
+			capital_province.culture = { save_scope_as = old_culture_2 }
 
 			# Create the culture
 			culture:russian = {
@@ -263,6 +273,7 @@ establish_russian_culture_decision = {
 		}
 
 		# Closeby scandinavian and east slavic rulers in Russia that likes the founder convert as well
+		# Note: their court and counties will not
 		hidden_effect = {
 			every_in_list = {
 				list = convertible_neighbours
@@ -272,6 +283,8 @@ establish_russian_culture_decision = {
 					OLD_CULTURE = this.culture
 					NEW_CULTURE = culture:russian
 				}
+
+				capital_county = { set_county_culture = culture:russian }
 			}
 		}
 
@@ -281,6 +294,11 @@ establish_russian_culture_decision = {
 			culture:russian = {
 				get_all_innovations_from = scope:old_culture_1
 				get_all_innovations_from = scope:old_culture_2
+			}
+			every_in_list = {
+				list = convertible_neighbours
+				save_scope_as = converting_neighbour
+				custom_tooltip = establish_russian_culture_convert_neighbours_effect.tt
 			}
 		}
 
@@ -302,9 +320,9 @@ establish_russian_culture_decision = {
 
 		# Biggest incentive is the proportion of east slavic counties in your realm
 		modifier = {
-			add = 60
+			add = 50
 			any_sub_realm_county = {
-				percent >= 0.5
+				percent >= 0.4
 				culture = { has_cultural_pillar = heritage_east_slavic }
 			}
 		}
@@ -313,6 +331,22 @@ establish_russian_culture_decision = {
 		modifier = {
 			add = 10
 			dynasty = 705
+		}
+
+		# Prestige influences AI probability to do it
+		modifier = {
+			add = 10
+			prestige_level >= 2
+		}
+		modifier = {
+			add = 30
+			prestige_level >= 3
+		}
+
+		# After chosen date for russian creation, please do it
+		modifier = {
+			add = 50
+			current_date >= 890.6.5
 		}
 	}
 }

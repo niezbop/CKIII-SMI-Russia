@@ -16,7 +16,7 @@ smi_russia.3002 = {
 
 	immediate = {
 		show_as_tooltip = {
-			custom_tooltip = smi_russia.custom.merge_culture
+			custom_tooltip = global_culture.custom.merge_culture
 			culture:russian = {
 				get_all_innovations_from = culture:norse
 			}
@@ -37,7 +37,7 @@ smi_russia.3003 = {
 
 	immediate = {
 		show_as_tooltip = {
-			custom_tooltip = smi_russia.custom.merge_culture
+			custom_tooltip = global_culture.custom.merge_culture
 			culture:russian = {
 				get_all_innovations_from = culture:norse
 			}

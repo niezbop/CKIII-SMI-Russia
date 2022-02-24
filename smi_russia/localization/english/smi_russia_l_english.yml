@@ -16,3 +16,4 @@
  establish_russian_culture_decision_confirm:0 "Long live the Russians!"
  establish_russian_culture_decision_tooltip:0 "Merge our Norse and the local Slav cultures together"
  establish_russian_culture_decision_effect.tt:0 "All [old_culture_1.GetName] and [old_culture_2.GetName] counties and characters you hold in Russia become [new_culture.GetName]"
+ establish_russian_culture_convert_neighbours_effect.tt:0 "[converting_neighbour.GetTitledFirstName] will convert as well"
