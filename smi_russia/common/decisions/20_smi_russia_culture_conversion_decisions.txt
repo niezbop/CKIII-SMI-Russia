@@ -133,6 +133,8 @@ establish_russian_culture_decision = {
 			cultural_acceptance = { target = root.capital_province.culture value >= 20 }
 		}
 		is_independent_ruler = yes
+		prestige_level >= 2
+		# TODO Find a way to get the AI cheat working without having to reimplement message
 		#custom_tooltip = {
 		#	text = MY_PRESTIGE_LEVEL_IS_AT_LEAST
 		#	OR = {
