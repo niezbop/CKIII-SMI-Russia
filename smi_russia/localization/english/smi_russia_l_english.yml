@@ -1,6 +1,7 @@
 ﻿l_english:
  smi_russia.3002.t:0 "Rise of the Russians"
- smi_russia.3002.desc:1 "The forests of the slavs have sheltered us and our families while we take our boats down to the land of Byzance to trade and raid. But those woods and their inhabitants have changed who we are. By acknowledging so, our people will grow strong and proud in this new place we can call home."
+ smi_russia.3002.desc.slavic:1 "We have lived in these lands for long now, and the norse have been many things over the years. Invaders, ennemies, raiders but also trade partners, friends or even allies. Our people have grown closer and in so doing, we have distanced ourselves from the way of our ancestors. Maybe it is time for us to acknowledge this."
+ smi_russia.3002.desc.norse:1 "The forests of the slavs have sheltered us and our families while we take our boats down to the land of Byzance to trade and raid. But those woods and their inhabitants have changed who we are. By acknowledging so, our people will grow strong and proud in this new place we can call home."
  smi_russia.3002.a:0 "Russian we shall be called then."
  smi_russia.3002.b:0 "This is not the way."
  smi_russia.3002.c:0 "To new friends and new beginnings!"

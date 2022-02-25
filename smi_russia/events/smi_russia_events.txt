@@ -10,7 +10,17 @@
 smi_russia.3002 = {
 	type = character_event
 	title = smi_russia.3002.t
-	desc = smi_russia.3002.desc
+	desc = {
+		first_valid = {
+			triggered_desc = {
+			    trigger = {
+					culture = culture:norse
+			    }
+			    desc = smi_russia.3002.desc.norse
+			}
+			desc = smi_russia.3002.desc.slavic
+		}
+	}
 	theme = culture_change
 	left_portrait = scope:russian_founder
 
