@@ -350,5 +350,11 @@ establish_russian_culture_decision = {
 			add = 50
 			current_date >= 890.6.5
 		}
+
+		# Favor established rulers, not freshly arrived adventurers
+		modifier = {
+			add = -20
+			has_trait = adventurer
+		}
 	}
 }
