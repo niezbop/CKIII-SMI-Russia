@@ -1,7 +1,9 @@
 ﻿l_english:
  smi_russia.3002.t:0 "Rise of the Russians"
  smi_russia.3002.desc:1 "The forests of the slavs have sheltered us and our families while we take our boats down to the land of Byzance to trade and raid. But those woods and their inhabitants have changed who we are. By acknowledging so, our people will grow strong and proud in this new place we can call home."
- smi_russia.3002.a:0 "To new friends and new beginnings!"
+ smi_russia.3002.a:0 "Russian we shall be called then."
+ smi_russia.3002.b:0 "This is not the way."
+ smi_russia.3002.c:0 "To new friends and new beginnings!"
 
  smi_russia.3003.t:0 "$smi_russia.3002.t$"
  smi_russia.3003.desc:0 "We are far from the lands that our Norse ancestors called home, but it is these lands of the slavs that we think of as our country. As the leader of my people, it is my responsibility to ensure future prosperity and if we are to flourish, then we must adapt to our new environment. We must learn from the people whose ancestors made use of these grounds.\n\nBy this decree, we will change our way of life to benefit our kin. We will forge a new path as our own people."
