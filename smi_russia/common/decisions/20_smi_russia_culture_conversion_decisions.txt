@@ -366,6 +366,7 @@ unite_the_eastern_slavs_decision = {
 	desc = unite_the_eastern_slavs_decision_desc
 
 	is_shown = {
+		game_start_date < 890.6.5
 		culture = { has_cultural_pillar = heritage_east_slavic }
 		NOT = {
 			is_target_in_global_variable_list = {
