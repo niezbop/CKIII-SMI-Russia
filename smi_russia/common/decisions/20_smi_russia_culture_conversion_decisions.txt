@@ -358,3 +358,77 @@ establish_russian_culture_decision = {
 		}
 	}
 }
+
+unite_the_eastern_slavs_decision = {
+	picture = "gfx/interface/illustrations/decisions/decision_realm.dds"
+	major = yes
+	ai_check_interval = 120
+	desc = unite_the_eastern_slavs_decision_desc
+
+	is_shown = {
+		culture = { has_cultural_pillar = heritage_east_slavic }
+		NOT = {
+			is_target_in_global_variable_list = {
+				name = unavailable_unique_decisions
+				target = flag:unite_the_eastern_slavs_decision
+			}
+		}
+	}
+
+	is_valid = {
+		culture = { has_cultural_pillar = heritage_east_slavic }
+		# No custom region for the time being
+		AND = {
+			completely_controls = title:k_galicia-volhynia
+			completely_controls = title:k_moldavia
+			completely_controls = title:k_novgorod
+			completely_controls = title:k_ruthenia
+			completely_controls = title:k_white_rus
+		}
+		OR = {
+			has_primary_title = title:k_galicia-volhynia
+			has_primary_title = title:k_moldavia
+			has_primary_title = title:k_novgorod
+			has_primary_title = title:k_ruthenia
+			has_primary_title = title:k_white_rus
+		}
+	}
+
+	effect = {
+		save_scope_as = eastern_slav_uniter
+
+		show_as_tooltip = { unite_the_eastern_slavs_decision_effects = yes } #Actually applied in smi_russia.0006 - prestige, laws, title, innovation effects
+
+		#Events
+		trigger_event = smi_russia.0005
+		every_player = {
+			limit = {
+				NOT = { this = scope:eastern_slav_uniter }
+				is_within_diplo_range = { CHARACTER = scope:eastern_slav_uniter }
+			}
+			trigger_event = smi_russia.0006
+		}
+
+		#Can only be done once
+		add_to_global_variable_list = {
+			name = unavailable_unique_decisions
+			target = flag:unite_the_eastern_slavs_decision
+		}
+		set_global_variable = {
+			name = unite_the_eastern_slavs_decision
+			value = scope:eastern_slav_uniter
+		}
+		set_global_variable = {
+			name = unite_the_eastern_slavs_decision_title
+			value = scope:eastern_slav_uniter.primary_title
+		}
+	}
+
+	ai_potential = {
+		always = yes
+	}
+
+	ai_will_do = {
+		base = 100
+	}
+}

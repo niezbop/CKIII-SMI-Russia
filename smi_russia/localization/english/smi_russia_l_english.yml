@@ -1,4 +1,9 @@
 ﻿l_english:
+ smi_russia.0005.t:0 "The East Slavs United"
+ smi_russia.0005.desc:0 "I have united the tribes of old under one banner. Together, we are stronger than ever before. We will not be conquered! We will not be erased!"
+ smi_russia.0005.a:0 "Glory to [ROOT.Char.GetPrimaryTitle.GetNameNoTierNoTooltip]!"
+ smi_russia.0006.desc:0 "[eastern_slav_uniter.Custom2('MyCharacterIntroduction', ROOT.Char)|U] has gathered the East Slavic peoples under one banner. Will this union stand the test of time, or will old feuds and customs tear it apart? Only [ROOT.Char.GetFaith.FateGodName] knows."
+
  smi_russia.3002.t:0 "Rise of the Russians"
  smi_russia.3002.desc.slavic:1 "We have lived in these lands for long now, and the norse have been many things over the years. Invaders, ennemies, raiders but also trade partners, friends or even allies. Our people have grown closer and in so doing, we have distanced ourselves from the way of our ancestors. Maybe it is time for us to acknowledge this."
  smi_russia.3002.desc.norse:1 "The forests of the slavs have sheltered us and our families while we take our boats down to the land of Byzance to trade and raid. But those woods and their inhabitants have changed who we are. By acknowledging so, our people will grow strong and proud in this new place we can call home."
@@ -20,3 +25,9 @@
  establish_russian_culture_decision_tooltip:0 "Merge our Norse and the local Slav cultures together"
  establish_russian_culture_decision_effect.tt:0 "All [old_culture_1.GetName] and [old_culture_2.GetName] counties and characters you hold in Russia become [new_culture.GetName]"
  establish_russian_culture_convert_neighbours_effect.tt:0 "[converting_neighbour.GetTitledFirstName] will convert as well"
+
+ unite_the_eastern_slavs_decision:0 "Unite the East Slavs"
+ unite_the_eastern_slavs_decision_tooltip:0 "Unite the Eastern Slavs under one ruler"
+ unite_the_eastern_slavs_decision_confirm:0 "Unite the East Slavs"
+ unite_the_eastern_slavs_decision_desc:0 "We were one people when we first came to these lands. Over the years we scattered, dividing ourselves into many tribes.\n\nNow we are surrounded by mighty Empires with strange customs. Due to their influence our own way of life is slowly fading. We cannot let this happen — the time has come to unite once more."
+ unite_the_eastern_slavs_decision_titles_tt:1 "Every East Slavic [kingdom|E] [title|E] you own (except your [primary_title|E]) will be destroyed and their territories will become [de_jure|E] of your Primary Title ([THIS.Char.GetPrimaryTitle.GetNameNoTier])"
