@@ -11797,7 +11797,6 @@
 302138 = {
 	name = "Ulyana"
 	female = yes
-	dynasty = 2001027	#Tivertsi
 	religion = "slavic_pagan"
 	culture = "russian"
 	842.6.1 = {
@@ -11825,7 +11824,7 @@
 302140 = {
 	name = "Vysheslav"
 	dynasty = 2001027	#Tivertsi
-	religion = "slavic_pagan"
+	religion = "orthodox"
 	culture = "russian"
 	1040.9.16 = {
 		birth = "1040.9.16"
@@ -12922,7 +12921,7 @@
 	name = "Iliya"
 	dynasty = 1029118
 	religion = slavic_pagan
-	culture = severian
+	culture = ilmenian
 	father = 194145
 	770.1.1 = {
 		birth = yes
