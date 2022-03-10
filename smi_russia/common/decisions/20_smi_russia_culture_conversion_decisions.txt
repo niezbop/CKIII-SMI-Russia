@@ -230,6 +230,7 @@ establish_russian_culture_decision = {
 						}
 						exists = capital_province
 						capital_province = { geographical_region = ghw_region_russia }
+						is_within_diplo_range = { CHARACTER = scope:russian_founder }
 					}
 					trigger_event = smi_russia.3002
 				}
