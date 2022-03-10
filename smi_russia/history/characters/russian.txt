@@ -11415,8 +11415,8 @@
 160138 = {
 	name = "Kazimir"
 	religion = "slavic_pagan"
-	culture = russian
-	dynasty = volhynian
+	culture = volhynian
+	dynasty = 1029117
 	father = 6868
 	863.1.1 = {
 		birth = yes
