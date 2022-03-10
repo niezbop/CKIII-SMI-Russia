@@ -590,6 +590,9 @@
 	890.6.5 = {
 		culture = russian
 	}
+	989.9.15 = {
+		religion = orthodox
+	}
 }
 5213 = {	#Vorotynsk
 	holding = none
@@ -612,6 +615,9 @@
 	890.6.5 = {
 		culture = russian
 	}
+	989.9.15 = {
+		religion = orthodox
+	}
 }
 5207 = {	#Ust-livny
 	holding = none
@@ -626,9 +632,6 @@
 	culture = meshchera
 	religion = finnish_pagan
 	holding = tribal_holding
-	1050.1.1 = {
-		culture = russian
-	}
 }
 5216 = {	#Mtensk
 	holding = none
@@ -642,9 +645,6 @@
 	culture = meshchera
 	religion = finnish_pagan
 	holding = tribal_holding
-	1050.1.1 = {
-		culture = russian
-	}
 }
 5218 = {	#Suvorov
 	holding = none

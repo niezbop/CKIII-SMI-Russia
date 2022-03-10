@@ -156,9 +156,6 @@
 	culture = vepsian
 	religion = finnish_pagan
 	holding = tribal_holding
-	1050.1.1 = {
-		culture = russian
-	}
 }
 5157 = {	#Cherepovets
 	holding = none
