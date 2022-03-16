@@ -346,6 +346,12 @@ establish_russian_culture_decision = {
 			prestige_level >= 3
 		}
 
+		# Discourage before a few years have passed
+		modifier = {
+			add = -20
+			current_date <= 880.1.1
+		}
+
 		# After chosen date for russian creation, please do it
 		modifier = {
 			add = 50
