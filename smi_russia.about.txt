@@ -1,0 +1,61 @@
+[h1]About[/h1]
+
+[b]Slightly More Interesting Russia[/b] is a mod that makes it more interesting to play in and around the area of the Russian Empire in CK3 in 867, by implementing mechanisms to allow for the creation of the russian culture.
+
+[h1]Features[/h1]
+[list]
+[*] No russian culture in 867 start
+[*] Hand positioned east slavic vanilla cultures in its place
+[*] Decision to establish the russian culture as a Norse ruler in russia
+[*] Several events depending on whether the AI takes the decision, or yourself
+[*] Historical weighting so that the AI Rurikid is more likely to take the decision if you don't
+[*] Decision to unite the east slavs, to offer a counterpart to the west and south ones
+[/list]
+
+[h1]Historical accuracy[/h1]
+
+The current consensus in Russian historiography is that the Rurikid dynasty descended from ethnically Scandinavian Varangians and that the term "Russia" originated from Old Norse. Which means that the setting offered by CK3 in the start date 867 is completely inaccurate. The Rus' culture can't exist in areas where the Norse hasn't influenced it, and it makes no sense for Rurik himself to convert to this culture. This mod aims to address some of those inaccuracies by distributing the dead east slavic cultures instead of the russian one in 867, and setting up a chain of events that could lead to the emergence of the russian culture. Because I used the vanilla CK3 cultures however, the positioning of some of the cultures is still quite bad.
+
+In the end, I believe that this mod is more accurate than vanilla CK3, but still not totally accurate.
+
+[h1]Compatibility[/h1]
+[h2]Achievements Compatibility[/h2]
+
+This mod is [b]Ironman Compatible[/b] but will [b]disable Achievements[/b].
+
+[h2]Known compatibilies[/h2]
+Because this mod uses only vanilla cultures and does not change them at all, it will be compatible with a lot of things that adds content to cultures. I have validated it to be compatible [b]by default[/b] with the following mods with large player bases:
+[list]
+[*] [url=https://steamcommunity.com/workshop/filedetails/?id=2507209632]Ethnicities & Portraits Expanded[/url]: the east slavic cultures use the fantastic additions of EPE
+[*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2220098919]Community Flavor Pack[/url]: the wonderful assets added by this mod will be used
+[*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2262523658]More Holding Graphics[/url]: all east slavic cultures use the beautiful russian architecture from this mod
+[/list]
+
+Load order with the above mods [b]does not matter[/b].
+
+[h2]Known incompatibilies[/h2]
+[list]
+[*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2432829205]Talamu-Anu: Full Culture Expansion[/url] also changes the area, and is therefore incompatible
+[*] Total conversion mods are logically not compatible
+[/list]
+
+[h2]File overwrites[/h2]
+This mod overwrites a number of files from vanilla CK3. Any other mod that changes those files will cause issues, ranging from slight incompatibilies to mod-breaking issues. Thankfully I play with a rather large mod list and have found no other mods than the one listed above causing issues because they change any of the following files. The list that follows is for other mods that I don't play with.
+
+This mod overwrites the history of the kingdoms where the russian culture is present in 867:
+[list]
+[*] history/provinces/k_ruthenia.txt
+[*] history/provinces/k_novgorod.txt
+[*] history/provinces/k_galicia-volhynia.txt
+[*] history/provinces/k_moldavia.txt
+[*] history/provinces/k_white_rus.txt
+[/list]
+
+It also overwrites the history of the russian people to distribute the proper culture: history/characters/russian.txt.
+
+I also made some changes to the "Have the Realm Embrace Local Tradition" (assimilate_local_traditions_decision) to remove the exception set by CK3 for Eastern Europe specifically which caused Dyre and Rurik to pretty much instaneously convert to their local cultures, to let them some time to have the chance to create the russian culture. Apart from total conversion mods, I found no other mods changing that decision.
+
+[h1]Links[/h1]
+You may also be interested in my other mod, [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2765843981]Slightly More Interesting Crimea[/url]
+
+This project can be found on [url=https://github.com/niezbop/CKIII-SMI-Russia]Github[/url]
