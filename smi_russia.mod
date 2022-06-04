@@ -7,5 +7,5 @@ tags={
 	"Events"
 }
 name="Slightly More Interesting Russia"
-supported_version="1.5.0.2"
+supported_version="1.6.*"
 path="/Users/niezbop/Documents/Paradox Interactive/Crusader Kings III/mod/smi_russia"
