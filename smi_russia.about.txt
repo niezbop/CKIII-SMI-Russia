@@ -56,6 +56,11 @@ It also overwrites the history of the russian people to distribute the proper cu
 I also made some changes to the "Have the Realm Embrace Local Tradition" (assimilate_local_traditions_decision) to remove the exception set by CK3 for Eastern Europe specifically which caused Dyre and Rurik to pretty much instaneously convert to their local cultures, to let them some time to have the chance to create the russian culture. Apart from total conversion mods, I found no other mods changing that decision.
 
 [h1]Links[/h1]
-You may also be interested in my other mod, [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2765843981]Slightly More Interesting Crimea[/url]
+You may also be interested in my other mods!
+[list]
+[*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2833935905]A few more Emerging Culture Names[/url]
+[*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2765843981]Slightly More Interesting Crimea[/url]
+[*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2854434625]Syncretic Special Buildings[/url]
+[/list]
 
 This project can be found on [url=https://github.com/niezbop/CKIII-SMI-Russia]Github[/url]
