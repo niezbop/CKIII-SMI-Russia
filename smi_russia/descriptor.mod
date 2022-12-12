@@ -8,3 +8,4 @@ tags={
 }
 name="Slightly More Interesting Russia"
 supported_version="1.8.*"
+remote_file_id="2765890006"

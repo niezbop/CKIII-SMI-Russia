@@ -9,3 +9,4 @@ tags={
 name="Slightly More Interesting Russia"
 supported_version="1.8.*"
 path="/Users/niezbop/Documents/Paradox Interactive/Crusader Kings III/mod/smi_russia"
+remote_file_id="2765890006"
