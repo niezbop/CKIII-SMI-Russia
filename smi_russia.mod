@@ -1,4 +1,4 @@
-version="1.0.3"
+version="1.0.4"
 tags={
 	"Historical"
 	"Map"
@@ -7,6 +7,6 @@ tags={
 	"Events"
 }
 name="Slightly More Interesting Russia"
-supported_version="1.11.*"
+supported_version="1.12.*"
 path="/Users/niezbop/Documents/Paradox Interactive/Crusader Kings III/mod/smi_russia"
 remote_file_id="2765890006"
