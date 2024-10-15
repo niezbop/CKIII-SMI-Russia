@@ -1,8 +1,9 @@
 ﻿# Override the 10_culture_conversion_decisions from the base game
 # Simply comment out the last exception WRT to eastern europe
 assimilate_local_traditions_decision = {
-	picture = "gfx/interface/illustrations/decisions/fp1_decision_raise_runestone.dds"
-	
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/fp1_decision_raise_runestone.dds"
+	}
 	sort_order = 75
 
 	desc = assimilate_local_traditions_decision_desc
@@ -49,6 +50,14 @@ assimilate_local_traditions_decision = {
 				}
 				multiply = 0
 			}
+			# Account for struggle phase.
+			if = {
+				limit = { is_struggle_parameter_active_cheaper_to_convert_to_struggle_culture_trigger = yes }
+				multiply = 0.25
+			}
+
+			# Make sure it's never dumb numbers.
+			min = 25
 		}
 	}
 
@@ -66,7 +75,7 @@ assimilate_local_traditions_decision = {
 
 	ai_potential = {
 		culture = culture:norse
-		is_landed = yes
+		is_playable_character = yes
 		NOT = { culture = capital_province.culture }
 	}
 
