@@ -113,8 +113,10 @@ assimilate_local_traditions_decision = {
 }
 
 establish_russian_culture_decision = {
-	picture = "gfx/interface/illustrations/decisions/decision_realm.dds"
-	major = yes
+	picture = {
+		reference = "gfx/interface/illustrations/decisions/decision_realm.dds"
+	}
+	decision_group_type = major
 
 	ai_check_interval = 48
 
