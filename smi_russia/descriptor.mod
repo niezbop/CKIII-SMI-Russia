@@ -1,4 +1,4 @@
-version="1.0.6"
+version="1.0.7"
 tags={
 	"Historical"
 	"Map"
@@ -7,5 +7,5 @@ tags={
 	"Events"
 }
 name="Slightly More Interesting Russia"
-supported_version="1.13.*"
+supported_version="1.14.*"
 remote_file_id="2765890006"
