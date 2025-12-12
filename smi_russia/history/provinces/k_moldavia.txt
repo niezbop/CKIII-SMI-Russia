@@ -1,4 +1,4 @@
-#k_moldavia
+﻿#k_moldavia
 ##d_bukovina ###################################
 ###c_suceava
 545 = {		#Suceava
@@ -13,6 +13,9 @@
 	}
 	1000.1.1 = {
 		religion = orthodox
+	}
+	1178.1.1 = {
+		culture = vlach
 	}
 }
 5034 = {	#Baia
@@ -70,6 +73,9 @@
 	1000.1.1 = {
 		religion = orthodox
 	}
+	1178.1.1 = {
+		culture = vlach
+	}
 }
 5039 = {	#Harlau
 	holding = none
@@ -114,6 +120,9 @@
 	1000.1.1 = {
 		religion = orthodox
 	}
+	1178.1.1 = {
+		culture = vlach
+	}
 }
 5023 = {	#Ungheni
 	holding = none
@@ -130,10 +139,14 @@
 	890.6.5 = {
 		culture = russian
 	}
-	935.1.1 = {
-		holding = castle_holding
+	1066.1.1 = {
+		culture = pecheneg
+		religion = tengri_pagan
+		holding = nomad_holding
 	}
-	1000.1.1 = {
+	1178.1.1 = {
+		holding = castle_holding
+		culture = vlach
 		religion = orthodox
 	}
 }
@@ -146,13 +159,24 @@
 	culture = volhynian
 	religion = slavic_pagan
 	holding = tribal_holding
-	890.6.5 = {
-		culture = russian
+	870.1.1 = {
+		culture = mogyer
+		religion = magyar_pagan
+		holding = nomad_holding
 	}
 	935.1.1 = {
 		holding = castle_holding
+		culture = russian
+		religion = slavic_pagan
 	}
-	1000.1.1 = {
+	1066.1.1 = {
+		culture = pecheneg
+		religion = tengri_pagan
+		holding = nomad_holding
+	}
+	1178.1.1 = {
+		holding = castle_holding
+		culture = vlach
 		religion = orthodox
 	}
 }
@@ -235,6 +259,9 @@
 	1000.1.1 = {
 		religion = orthodox
 	}
+	1066.1.1 = {
+		holding = tribal_holding # Pecheneg
+	}
 }
 5016 = {	#Cahul
 	holding = none
@@ -245,11 +272,15 @@
 	culture = vlach
 	religion = orthodox
 	holding = tribal_holding
-	935.1.1 = {
-		holding = castle_holding
+	1066.1.1 = {
+		culture = pecheneg
+		religion = tengri_pagan
+		holding = nomad_holding # pecheneg rule
 	}
-	1000.1.1 = {
+	1178.1.1 = {
+		culture = vlach
 		religion = orthodox
+		holding = castle_holding
 	}
 }
 5011 = {	#Tighina
@@ -266,6 +297,9 @@
 	}
 	1000.1.1 = {
 		religion = orthodox
+	}
+	1066.1.1 = {
+		holding = tribal_holding # Pecheneg
 	}
 }
 5013 = {	#Oblucita
@@ -291,6 +325,9 @@
 	}
 	1000.1.1 = {
 		religion = orthodox
+	}
+	1178.1.1 = {
+		culture = vlach
 	}
 }
 5018 = {	#Chisinau

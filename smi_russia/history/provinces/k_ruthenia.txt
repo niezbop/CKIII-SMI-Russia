@@ -35,7 +35,7 @@
 			castle_02
 			farm_estates_02
 			curtain_walls_01
-			regimental_grounds_01
+			#regimental_grounds_01
 		}
 	}
 }
@@ -211,7 +211,7 @@
 		buildings = {
 			hunting_grounds_01
 			peat_quarries_01
-			outposts_01
+			#outposts_01
 		}
 	}
 }
@@ -297,7 +297,7 @@
 		buildings = {
 			curtain_walls_01
 			barracks_01
-			military_camps_01
+			#military_camps_01
 		}
 	}
 }
@@ -417,7 +417,7 @@
 	1066.1.1 = {
 		buildings = {
 			curtain_walls_01
-			peat_quarries_01
+			#peat_quarries_01
 			barracks_01
 		}
 	}
@@ -568,6 +568,9 @@
 	989.9.15 = {
 		religion = orthodox
 	}
+	1178.1.1 = {
+		holding = castle_holding
+	}
 }
 5210 = {	#Krom
 	holding = none
@@ -592,6 +595,9 @@
 	}
 	989.9.15 = {
 		religion = orthodox
+	}
+	1178.1.1 = {
+		holding = castle_holding
 	}
 }
 5213 = {	#Vorotynsk
@@ -618,6 +624,9 @@
 	989.9.15 = {
 		religion = orthodox
 	}
+	1178.1.1 = {
+		holding = castle_holding
+	}
 }
 5207 = {	#Ust-livny
 	holding = none
@@ -632,6 +641,12 @@
 	culture = meshchera
 	religion = finnish_pagan
 	holding = tribal_holding
+
+	1155.1.1 = {
+		culture = russian
+		religion = orthodox
+		holding = castle_holding
+	}
 }
 5216 = {	#Mtensk
 	holding = none
@@ -645,6 +660,10 @@
 	culture = meshchera
 	religion = finnish_pagan
 	holding = tribal_holding
+
+	1178.1.1 = {
+		holding = castle_holding
+	}
 }
 5218 = {	#Suvorov
 	holding = none

@@ -23,8 +23,8 @@
 		buildings = {
 			ramparts_01
 			barracks_01
-			hunting_grounds_01
-			outposts_01
+			#hunting_grounds_01
+			#outposts_01
 		}
 	}
 }
@@ -38,7 +38,7 @@
 	holding = none
 }
 5140 = {	#Soltsy
-	holding = none
+	holding = church_holding
 }
 5141 = {	#Luga
 	holding = none

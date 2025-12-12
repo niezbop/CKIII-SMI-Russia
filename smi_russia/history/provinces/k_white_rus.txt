@@ -206,7 +206,7 @@
 		buildings = {
 			ramparts_01
 			hunting_grounds_01
-			military_camps_01
+			#military_camps_01
 		}
 	}
 }
@@ -340,13 +340,16 @@
 ###c_mozhaysk
 587 = {		#Mozhaysk
 	culture = merya
-	religion = slavic_pagan
+	religion = finnish_pagan
 	holding = tribal_holding
 	989.9.15 = {
 		religion = orthodox
 	}
 	1050.1.1 = {
 		culture = russian
+	}
+	1178.1.1 = {
+		holding = castle_holding
 	}
 }
 5226 = {	#Lotoshino
