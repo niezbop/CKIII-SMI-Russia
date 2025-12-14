@@ -11662,7 +11662,7 @@
 	name = "Gleb"
 	dynasty = 1029167
 	religion = slavic_pagan
-	culture = russian
+	culture = volhynian
 	father = 194137
 	810.1.1 = {
 		birth = yes
@@ -11765,7 +11765,7 @@
 	name = "Briachislav"
 	dynasty = 1045031	#Ulichs
 	religion = "slavic_pagan"
-	culture = "russian"
+	culture = "ilmenian"
 	834.11.20 = {
 		birth = "834.11.20"
 	}
@@ -11781,7 +11781,7 @@
 	female = yes
 	dynasty = 1045031	#Ulichs
 	religion = "slavic_pagan"
-	culture = "russian"
+	culture = "ilmenian"
 	838.3.12 = {
 		birth = "838.3.12"
 	}
@@ -11793,7 +11793,7 @@
 	name = "Lev"
 	dynasty = 1045031	#Ulichs
 	religion = "slavic_pagan"
-	culture = "russian"
+	culture = "ilmenian"
 	father = 302134
 	mother = 302135
 	855.3.15 = {
@@ -11808,7 +11808,7 @@
 	name = "Vladislav"
 	dynasty = 2001027	#Tivertsi
 	religion = "slavic_pagan"
-	culture = "russian"
+	culture = "severian"
 	839.3.23 = {
 		birth = "839.3.23"
 	}
@@ -11823,7 +11823,7 @@
 	name = "Ulyana"
 	female = yes
 	religion = "slavic_pagan"
-	culture = "russian"
+	culture = "severian"
 	842.6.1 = {
 		birth = "842.6.1"
 	}
@@ -11836,7 +11836,7 @@
 	female = yes
 	dynasty = 2001027	#Tivertsi
 	religion = "slavic_pagan"
-	culture = "russian"
+	culture = "severian"
 	father = 302137
 	mother = 302138
 	862.7.15 = {
@@ -11930,7 +11930,7 @@
 	name = Igor
 	dynasty = 2001030	#Buzhanko
 	religion = slavic_pagan
-	culture = russian
+	culture = ilmenian
 	837.8.16 = {
 		birth = 837.8.16
 	}
