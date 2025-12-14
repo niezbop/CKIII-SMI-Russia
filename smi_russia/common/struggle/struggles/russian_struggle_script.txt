@@ -1,39 +1,27 @@
-﻿iberian_struggle = {
+﻿russian_struggle = {
 	illustration = "gfx/interface/illustrations/event_story/fp2_compromise.dds"
 
 	##################################################
 	# Setup
 	##################################################
 	cultures = {
-		# Northern
-		basque
-		castilian
-		catalan
-		portuguese
-		galician
-		asturleonese
-		aragonese
-		
-		# Southern
-		andalusian
-		
-		# Outsider
-		bedouin
-		levantine
-		maghrebi
-		baranis
+        # East Slavic
+        ilmenian
+        volhynian
+        severian
 
-		# Minorities
-		sephardi 
+        # North Germanic
+        norse
+
+        # Balto-Finnic
+        vepsian
 	}
 	faiths = {
-		# Christian
-		catholic mozarabic_church
-
-		# Islamic
-		ashari muwalladi
+        slavic_pagan
+        norse_pagan
+        finnish_pagan
 	}
-	regions = { world_europe_west_iberia }
+	regions = { ghw_region_russia }
 
 	# A culture or faith becomes involved if 80% of the total number of counties belonging to it are inside the struggle region.
 	involvement_prerequisite_percentage = 0.8
@@ -46,7 +34,6 @@
 	}
 
 	on_change_phase = {
-
 		# Set up AI Intent
 		trigger_event = fp2_struggle.0003
 	}
