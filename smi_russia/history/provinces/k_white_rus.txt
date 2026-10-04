@@ -3,7 +3,7 @@
 ###c_grodno
 161 = {		#GRODNO
 	culture = lithuanian
-	religion = baltic_pagan
+	rite = baltic_pagan
 	holding = tribal_holding
 }
 164 = {		#LIDA
@@ -12,14 +12,17 @@
 ###c_volkovysk
 5044 = {	#Volkovysk
 	culture = ilmenian
-	religion = slavic_pagan
+	rite = slavic_pagan
 	holding = tribal_holding
 	890.6.5 = {
 		culture = russian
 	}
 	989.9.15 = {
-		religion = orthodox
+		rite = slavic_rite	#Slavonic liturgy of the early Rus' sees
 		holding = castle_holding
+	}
+	1054.7.16 = {
+		rite = slavic_rite	#Great Schism; still valid under orthodox
 	}
 }
 5043 = {	#Sokolka
@@ -32,14 +35,17 @@
 ###c_novogrudok
 5136 = {	#Novogrudok
 	culture = ilmenian
-	religion = slavic_pagan
+	rite = slavic_pagan
 	holding = tribal_holding
 	890.6.5 = {
 		culture = russian
 	}
 	989.9.15 = {
-		religion = orthodox
+		rite = slavic_rite	#Slavonic liturgy of the early Rus' sees
 		holding = castle_holding
+	}
+	1054.7.16 = {
+		rite = slavic_rite	#Great Schism; still valid under orthodox
 	}
 }
 5045 = {	#Slonim
@@ -50,14 +56,17 @@
 ###c_pinsk
 548 = {		#Pinsk
 	culture = ilmenian
-	religion = slavic_pagan
+	rite = slavic_pagan
 	holding = tribal_holding
 	890.6.5 = {
 		culture = russian
 	}
 	989.9.15 = {
-		religion = orthodox
+		rite = slavic_rite	#Slavonic liturgy of the early Rus' sees
 		holding = castle_holding
+	}
+	1054.7.16 = {
+		rite = slavic_rite	#Great Schism; still valid under orthodox
 	}
 }
 5112 = {	#Lahishyn
@@ -70,14 +79,17 @@
 ###c_slutsk
 5114 = {	#Slutsk
 	culture = ilmenian
-	religion = slavic_pagan
+	rite = slavic_pagan
 	holding = tribal_holding
 	890.6.5 = {
 		culture = russian
 	}
 	989.9.15 = {
-		religion = orthodox
+		rite = slavic_rite	#Slavonic liturgy of the early Rus' sees
 		holding = castle_holding
+	}
+	1054.7.16 = {
+		rite = slavic_rite	#Great Schism; still valid under orthodox
 	}
 }
 5115 = {	#Zhytkavichy
@@ -90,13 +102,16 @@
 ###c_kletsk
 5117 = {	#Kletsk
 	culture = ilmenian
-	religion = slavic_pagan
+	rite = slavic_pagan
 	#holding = castle_holding
 	890.6.5 = {
 		culture = russian
 	}
 	989.9.15 = {
-		religion = orthodox
+		rite = slavic_rite	#Slavonic liturgy of the early Rus' sees
+	}
+	1054.7.16 = {
+		rite = slavic_rite	#Great Schism; still valid under orthodox
 	}
 }
 5118 = {	#Baranovichi
@@ -106,14 +121,17 @@
 ###c_babruysk
 5119 = {	#Babruysk
 	culture = severian
-	religion = slavic_pagan
+	rite = slavic_pagan
 	holding = tribal_holding
 	890.6.5 = {
 		culture = russian
 	}
 	989.9.15 = {
-		religion = orthodox
+		rite = slavic_rite	#Slavonic liturgy of the early Rus' sees
 		holding = castle_holding
+	}
+	1054.7.16 = {
+		rite = slavic_rite	#Great Schism; still valid under orthodox
 	}
 }
 5120 = {	#Zhlobin
@@ -133,7 +151,7 @@
 ###c_minsk
 550 = {		#Minsk
 	culture = ilmenian
-	religion = slavic_pagan
+	rite = slavic_pagan
 	holding = tribal_holding
 	890.6.5 = {
 		culture = russian
@@ -142,7 +160,10 @@
 		holding = castle_holding
 	}
 	989.9.15 = {
-		religion = orthodox
+		rite = slavic_rite	#Slavonic liturgy of the early Rus' sees
+	}
+	1054.7.16 = {
+		rite = slavic_rite	#Great Schism; still valid under orthodox
 	}
 }
 5123 = {	#Lahoysk
@@ -170,14 +191,17 @@
 ###c_orsha
 5127 = {	#Orsha
 	culture = ilmenian
-	religion = slavic_pagan
+	rite = slavic_pagan
 	holding = tribal_holding
 	890.6.5 = {
 		culture = russian
 	}
 	989.9.15 = {
-		religion = orthodox
+		rite = slavic_rite	#Slavonic liturgy of the early Rus' sees
 		holding = castle_holding
+	}
+	1054.7.16 = {
+		rite = slavic_rite	#Great Schism; still valid under orthodox
 	}
 }
 5128 = {	#Drutsk
@@ -191,7 +215,7 @@
 ###c_polotsk
 5129 = {	#Polotsk
 	culture = ilmenian
-	religion = slavic_pagan
+	rite = slavic_pagan
 	holding = tribal_holding
 	890.6.5 = {
 		culture = russian
@@ -200,7 +224,10 @@
 		holding = castle_holding
 	}
 	989.9.15 = {
-		religion = orthodox
+		rite = slavic_rite	#Slavonic liturgy of the early Rus' sees
+	}
+	1054.7.16 = {
+		rite = slavic_rite	#Great Schism; still valid under orthodox
 	}
 	1066.1.1 = {
 		buildings = {
@@ -212,6 +239,9 @@
 }
 5130 = {	#Drysa
 	holding = none
+    1125.1.1 = {
+        holding = church_holding        #Convents of St Euphrosyne of Polotsk
+    }
 }
 5131 = {	#Myory
 	holding = none
@@ -220,7 +250,7 @@
 ###c_lukoml
 934 = {		#Lukoml
 	culture = ilmenian
-	religion = slavic_pagan
+	rite = slavic_pagan
 	holding = tribal_holding
 	890.6.5 = {
 		culture = russian
@@ -229,7 +259,10 @@
 		holding = castle_holding
 	}
 	989.9.15 = {
-		religion = orthodox
+		rite = slavic_rite	#Slavonic liturgy of the early Rus' sees
+	}
+	1054.7.16 = {
+		rite = slavic_rite	#Great Schism; still valid under orthodox
 	}
 }
 5132 = {	#Vetrino
@@ -242,7 +275,7 @@
 ###c_vitebsk
 5134 = {	#Vitebsk
 	culture = ilmenian
-	religion = slavic_pagan
+	rite = slavic_pagan
 	holding = tribal_holding
 	890.6.5 = {
 		culture = russian
@@ -251,7 +284,10 @@
 		holding = castle_holding
 	}
 	989.9.15 = {
-		religion = orthodox
+		rite = slavic_rite	#Slavonic liturgy of the early Rus' sees
+	}
+	1054.7.16 = {
+		rite = slavic_rite	#Great Schism; still valid under orthodox
 	}
 }
 5135 = {	#Haradok
@@ -265,14 +301,17 @@
 ###c_smolensk
 568 = {		#Smolensk
 	culture = ilmenian
-	religion = slavic_pagan
+	rite = slavic_pagan
 	holding = tribal_holding
 	890.6.5 = {
 		culture = russian
 	}
 	989.9.15 = {
-		religion = orthodox
+		rite = slavic_rite	#Slavonic liturgy of the early Rus' sees
 		holding = castle_holding
+	}
+	1054.7.16 = {
+		rite = slavic_rite	#Great Schism; still valid under orthodox
 	}
 }
 5219 = {	#Dorogobyzh
@@ -300,14 +339,17 @@
 ###c_gnezdovo
 5221 = {	#Gnezdovo
 	culture = ilmenian
-	religion = slavic_pagan
+	rite = slavic_pagan
 	holding = tribal_holding
 	890.6.5 = {
 		culture = russian
 	}
 	989.9.15 = {
-		religion = orthodox
+		rite = slavic_rite	#Slavonic liturgy of the early Rus' sees
 		holding = castle_holding
+	}
+	1054.7.16 = {
+		rite = slavic_rite	#Great Schism; still valid under orthodox
 	}
 }
 5222 = {	#Velizh
@@ -320,14 +362,17 @@
 ###c_roslavl
 933 = {		#Roslavl
 	culture = severian
-	religion = slavic_pagan
+	rite = slavic_pagan
 	holding = tribal_holding
 	890.6.5 = {
 		culture = russian
 	}
 	989.9.15 = {
-		religion = orthodox
+		rite = slavic_rite	#Slavonic liturgy of the early Rus' sees
 		holding = castle_holding
+	}
+	1054.7.16 = {
+		rite = slavic_rite	#Great Schism; still valid under orthodox
 	}
 }
 5224 = {	#Klimavichy
@@ -340,10 +385,13 @@
 ###c_mozhaysk
 587 = {		#Mozhaysk
 	culture = merya
-	religion = finnish_pagan
+	rite = finnish_pagan
 	holding = tribal_holding
 	989.9.15 = {
-		religion = orthodox
+		rite = slavic_rite	#Slavonic liturgy of the early Rus' sees
+	}
+	1054.7.16 = {
+		rite = slavic_rite	#Great Schism; still valid under orthodox
 	}
 	1050.1.1 = {
 		culture = russian
@@ -362,14 +410,17 @@
 ###c_toropets
 5170 = {	#Toropets
 	culture = ilmenian
-	religion = slavic_pagan
+	rite = slavic_pagan
 	holding = tribal_holding
 	890.6.5 = {
 		culture = russian
 	}
 	989.9.15 = {
-		religion = orthodox
+		rite = slavic_rite	#Slavonic liturgy of the early Rus' sees
 		holding = castle_holding
+	}
+	1054.7.16 = {
+		rite = slavic_rite	#Great Schism; still valid under orthodox
 	}
 }
 5171 = {	#Andreapol
