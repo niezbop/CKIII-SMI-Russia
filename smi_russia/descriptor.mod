@@ -7,5 +7,5 @@ tags={
 	"Events"
 }
 name="Slightly More Interesting Russia"
-supported_version="1.20.*"
+supported_version="1.21.*"
 remote_file_id="2765890006"
